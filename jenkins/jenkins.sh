@@ -9,7 +9,7 @@
 #Modified: sept 2021
 
 
-OS_VERSION=(cat /etc/*release |grep VERSION_ID |awk -F\" '{print $2}')
+OS_VERSION=`cat /etc/*release |grep VERSION_ID |awk -F\" '{print $2}'`
 OS_TYPE=`cat /etc/*release|head -1|awk '{print $1}'`
 
 
