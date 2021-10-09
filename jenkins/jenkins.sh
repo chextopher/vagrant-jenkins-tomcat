@@ -9,7 +9,7 @@
 #Modified: sept 2021
 
 
-OS_VERSION=`cat /etc/*release |grep VERSION_ID |awk -F\" '{print $2}'`
+OS_VERSION=(cat /etc/*release |grep VERSION_ID |awk -F\" '{print $2}')
 OS_TYPE=`cat /etc/*release|head -1|awk '{print $1}'`
 
 
@@ -49,7 +49,7 @@ java -version
 
 sleep 2
 
-echo "now donloading jenkins..."
+echo "now downloading jenkins..."
 
 sleep 4
 echo
@@ -132,7 +132,7 @@ java -version
 
 sleep 2
 
-echo "now donloading jenkins..."
+echo "now downloading jenkins..."
 
 sleep 4
 echo
